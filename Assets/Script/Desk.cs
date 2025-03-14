@@ -5,6 +5,7 @@ using UnityEngine;
 public class Desk : MonoBehaviour
 {
     private Animator desk;
+    private bool isOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,18 @@ public class Desk : MonoBehaviour
     }
     void OnMouseDown()
     {
-        desk.SetTrigger("OpenTrigger");
+        if (isOpen)
+        {
+            // Š÷‚ªŠJ‚¢‚Ä‚¢‚éê‡‚Í•Â‚¶‚é
+            desk.SetTrigger("CloseTrigger");
+            isOpen = false;
+        }
+        else
+        {
+            // Š÷‚ª•Â‚¶‚Ä‚¢‚éê‡‚ÍŠJ‚­
+            desk.SetTrigger("OpenTrigger");
+            isOpen = true;
+        }
     }
 }
 
