@@ -6,6 +6,9 @@ public class Desk : MonoBehaviour
 {
     private Animator desk;
     private bool isOpen = false;
+    public AudioSource openSound;
+    public AudioSource closeSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +28,14 @@ public class Desk : MonoBehaviour
         {
             // Š÷‚ªŠJ‚¢‚Ä‚¢‚éê‡‚Í•Â‚¶‚é
             desk.SetTrigger("CloseTrigger");
+            closeSound.Play();
             isOpen = false;
         }
         else
         {
             // Š÷‚ª•Â‚¶‚Ä‚¢‚éê‡‚ÍŠJ‚­
             desk.SetTrigger("OpenTrigger");
+            openSound.Play();
             isOpen = true;
         }
     }

@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Camera subCamera;
     public float minRotation = -45f; // ç≈è¨âÒì]äpìx
     public float maxRotation = 50f; // ç≈ëÂâÒì]äpìx
+    public AudioSource footSource;
 
 
     // Start is called before the first frame update
@@ -35,10 +36,12 @@ public class Player : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 velocity = cameraForward * speed;
+                footSource.Play();
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 velocity = cameraBack * speed;
+                footSource.Play();
             }
             else if (Input.GetKey(KeyCode.A))
             {

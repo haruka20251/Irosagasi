@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cusion : MonoBehaviour
 {
     private float speed = 50f;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,8 @@ public class Cusion : MonoBehaviour
     }
     void OnMouseDown()
     {
-      
+            
             transform.Translate(Vector3.up * speed * Time.deltaTime);
-        
+            audioSource.Play();
     }
 }
