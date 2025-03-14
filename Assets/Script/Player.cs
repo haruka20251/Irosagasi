@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     private Rigidbody playerRb;
-    private float speed=0.01f;
+    private float speed=0.7f;
     private float speedR=0.2f;
     public Camera subCamera;
     public float minRotation = -45f; // Å¬‰ñ“]Šp“x
@@ -29,15 +29,16 @@ public class Player : MonoBehaviour
             Vector3 cameraForward = Camera.main.transform.forward;
             cameraForward.y = 0; // Y²•ûŒü‚ÌˆÚ“®‚ğ–³‹
             cameraForward.Normalize();
+            Vector3 velocity = Vector3.zero;
 
             Vector3 cameraBack = -cameraForward; // ƒJƒƒ‰‚Ì‹t•ûŒü
             if (Input.GetKey(KeyCode.W))
             {
-                transform.Translate(Vector3.forward * speed);
+                velocity = cameraForward * speed;
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                transform.Translate(Vector3.back * speed);
+                velocity = cameraBack * speed;
             }
             else if (Input.GetKey(KeyCode.A))
             {
@@ -47,6 +48,8 @@ public class Player : MonoBehaviour
             {
                 transform.Rotate(0, speedR, 0);
             }
+            playerRb.velocity = velocity;
+
             if (subCamera != null)
             {
                 float currentRotationX = subCamera.transform.eulerAngles.x;
