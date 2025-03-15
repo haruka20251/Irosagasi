@@ -12,14 +12,16 @@ public class Player : MonoBehaviour
     public float minRotation = -45f; // 最小回転角度
     public float maxRotation = 50f; // 最大回転角度
     public AudioSource footSource;
-
-
+    [SerializeField]private CameraMove cameraMove=new CameraMove();
+    private Transform cameraTransform;
+    private bool isMoving = false;
     // Start is called before the first frame update
     void Start()
     {
      
         playerRb = GetComponent<Rigidbody>();
-        
+        cameraMove.Setup(subCamera, 1.0f);
+        cameraTransform = subCamera.transform;
     }
 
     // Update is called once per frame
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour
             cameraForward.y = 0; // Y軸方向の移動を無視
             cameraForward.Normalize();
             Vector3 velocity = Vector3.zero;
-            bool isMoving = false;
+               isMoving = false;
 
             Vector3 cameraBack = -cameraForward; // カメラの逆方向
             if (Input.GetKey(KeyCode.W))
@@ -90,11 +92,9 @@ public class Player : MonoBehaviour
             {
                 Debug.LogError("サブカメラがアサインされていません！");
             }
-
-            
-        
         }
-       
 
+        Vector3 camerMoved= cameraMove.DoHeadBob(1.0f, isMoving);
+        cameraTransform.localPosition= camerMoved;
     }
 }
