@@ -31,27 +31,40 @@ public class Player : MonoBehaviour
             cameraForward.y = 0; // Y軸方向の移動を無視
             cameraForward.Normalize();
             Vector3 velocity = Vector3.zero;
+            bool isMoving = false;
 
             Vector3 cameraBack = -cameraForward; // カメラの逆方向
             if (Input.GetKey(KeyCode.W))
             {
                 velocity = cameraForward * speed;
-                footSource.Play();
+                isMoving = true;
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 velocity = cameraBack * speed;
                 footSource.Play();
+                isMoving = true;
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 transform.Rotate(0, -speedR, 0);
+                isMoving=false;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 transform.Rotate(0, speedR, 0);
+                isMoving=false;
             }
             playerRb.velocity = velocity;
+
+            if (isMoving && !footSource.isPlaying) // 移動中で、かつ音が再生中でない場合のみ再生
+            {
+                footSource.Play();
+            }
+            else if (!isMoving && footSource.isPlaying) // 停止中で、かつ音が再生中の場合停止
+            {
+                footSource.Stop();
+            }
 
             if (subCamera != null)
             {
@@ -77,6 +90,7 @@ public class Player : MonoBehaviour
             {
                 Debug.LogError("サブカメラがアサインされていません！");
             }
+
             
         
         }
