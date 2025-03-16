@@ -11,7 +11,7 @@ public class Key : MonoBehaviour
     private float targetthreshold=1f;//最終の値
     private bool isFading=false;//消えている途中かどうか
     public AudioSource source;
-
+    public string nextSceneName;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +49,11 @@ public class Key : MonoBehaviour
             }
 
             key.SetFloat("_Threshold", targetthreshold); // 最終的な値を設定
+
+        if (key.GetFloat("_Threshold") >= 1F)
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
             isFading = false;
          }
     }

@@ -2244,6 +2244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: {fileID: 2100000, guid: 4e67cd8ae896cb94e8941f89e11986e9, type: 2}
   source: {fileID: 1541867443}
+  nextSceneName: SampleScene 2
 --- !u!64 &270747056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12946,7 +12947,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 02079aab6e1a2a847b09617b127780a7, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: adc7b9d7f0590ab48a3b5c081906766a, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1691939216
 Terrain:
