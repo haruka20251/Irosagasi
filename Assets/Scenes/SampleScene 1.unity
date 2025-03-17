@@ -177,7 +177,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (4)
@@ -539,6 +539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 846173787}
     m_Modifications:
+    - target: {fileID: 5363278896840782130, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 5867853647330971879, guid: 0758d192278633543ad832e7ee2f264f, type: 3}
       propertyPath: m_Name
       value: RugRectangleMedium
@@ -802,7 +806,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (2)
@@ -1184,15 +1188,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343522555849438, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.457
+      value: 1.157
       objectReference: {fileID: 0}
     - target: {fileID: 4343522555849438, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.416
+      value: 0.033
       objectReference: {fileID: 0}
     - target: {fileID: 4343522555849438, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.13
+      value: -0.355
       objectReference: {fileID: 0}
     - target: {fileID: 4343522555849438, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1225,7 +1229,7 @@ PrefabInstance:
     - target: {fileID: 23749670609487866, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4e67cd8ae896cb94e8941f89e11986e9, type: 2}
+      objectReference: {fileID: 2100000, guid: 31da38f3c2e6a2848bc8fd55ac1fb6a5, type: 2}
     m_RemovedComponents:
     - {fileID: 114641328670010386, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
     - {fileID: 5966616405675974068, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
@@ -2303,7 +2307,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (3)
@@ -2375,7 +2379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: {fileID: 2100000, guid: 4e67cd8ae896cb94e8941f89e11986e9, type: 2}
   source: {fileID: 1541867443}
-  nextSceneName: 
+  nextSceneName: SampleScene 2
 --- !u!64 &270747056
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2862,7 +2866,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (6)
@@ -3202,6 +3206,10 @@ PrefabInstance:
     - target: {fileID: 3636166500029668819, guid: 4d6d77828794b124bb67d746422e04f3, type: 3}
       propertyPath: m_Name
       value: Plane 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3636166500029668819, guid: 4d6d77828794b124bb67d746422e04f3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6530915103686879684, guid: 4d6d77828794b124bb67d746422e04f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4509,6 +4517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1950137700599716191, guid: 3d7a6e2c30d8bdc4a93881358d292ec7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5417,7 +5429,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -6161,72 +6173,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9008418, y: 2.0771692, z: 0.15166782}
   m_Center: {x: 0.4477758, y: 1.0829664, z: -0.03195343}
---- !u!59 &662912068
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662912065}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.5, y: 0, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  serializedVersion: 2
-  m_UseSpring: 0
-  m_Spring:
-    spring: 5
-    damper: 3
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 0
-  m_ExtendedLimits: 0
-  m_UseAcceleration: 0
-  m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
---- !u!54 &662912069
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662912065}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &664279462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7731,6 +7677,10 @@ PrefabInstance:
     - target: {fileID: 4801633850850382827, guid: ffad5f5701478a14e898de16455d772d, type: 3}
       propertyPath: m_Name
       value: Plane 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801633850850382827, guid: ffad5f5701478a14e898de16455d772d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12732,7 +12682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1490774663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12950,7 +12900,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72e29c34a45d70244b7d986f01c18780, type: 2}
+  - {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13134,7 +13084,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (8)
@@ -13306,7 +13256,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (7)
@@ -14651,7 +14601,7 @@ PrefabInstance:
     - target: {fileID: 3235732913138448194, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: abd58258fb1642843805d58f683000e8, type: 2}
+      objectReference: {fileID: 2100000, guid: 50240cc6883f15844af59ae87882ecdb, type: 2}
     - target: {fileID: 4028291200020092567, guid: c5016d6076b0ab04d9fa321052c814a0, type: 3}
       propertyPath: m_Name
       value: SofaCusion (5)
@@ -15686,12 +15636,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7486370789847525827, guid: bfa974a01b4cbd94eb18f3e7956f9aca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 662912069}
-    - targetCorrespondingSourceObject: {fileID: 7486370789847525827, guid: bfa974a01b4cbd94eb18f3e7956f9aca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 662912068}
     - targetCorrespondingSourceObject: {fileID: 7486370789847525827, guid: bfa974a01b4cbd94eb18f3e7956f9aca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 662912067}
