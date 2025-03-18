@@ -19,6 +19,9 @@ public class StringPassword : MonoBehaviour
 
     public UnityEvent OnCorrect;
 
+    private bool isAnimationPlaying = false;
+    public GameObject targetObject;
+    public AudioSource audioSource;
 
     public void ChangeText(int n)
     {
@@ -33,6 +36,7 @@ public class StringPassword : MonoBehaviour
 
         // ボタンのテキストを更新
         texts[n].text = chars[nows[n]].ToString();
+        CheckAnswer();
     }
     public void CheckAnswer()
     {
@@ -45,6 +49,13 @@ public class StringPassword : MonoBehaviour
         {
             Debug.Log("正解");
             OnCorrect.Invoke();
+            audioSource.Play();
+
+            if (targetObject != null)
+            {
+                targetObject.SetActive(false);
+                isAnimationPlaying = false;
+            }
         }
     }
 
