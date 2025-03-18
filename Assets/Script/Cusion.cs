@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Cusion : MonoBehaviour
 {
@@ -19,8 +20,13 @@ public class Cusion : MonoBehaviour
     }
     void OnMouseDown()
     {
-            
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
             audioSource.Play();
     }
 }

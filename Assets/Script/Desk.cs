@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Desk : MonoBehaviour
 {
@@ -22,8 +23,13 @@ public class Desk : MonoBehaviour
     {
         
     }
-    void OnMouseDown()
+    public void OnMouseDown()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (isOpen)
         {
             // Š÷‚ªŠJ‚¢‚Ä‚¢‚éê‡‚Í•Â‚¶‚é
