@@ -12,6 +12,8 @@ public class Password2 : MonoBehaviour
     public AudioSource audioSource;
     public UnityEvent OnCorrect;
     public InputField inputField;
+    public GameObject targetObject;
+    private bool isAnimationPlaying = false;
 
     public void CheckAnswer() //引数を削除
     {
@@ -19,13 +21,19 @@ public class Password2 : MonoBehaviour
 
         if (enteredText == "STAR" || enteredText == "star" || enteredText == "Star")
         {
-            resultText.text = "パスワード一致！";
+            resultText.text = "Password correct!";
             audioSource.Play();
             OnCorrect.Invoke();
+            if (targetObject != null)
+            {
+
+                targetObject.SetActive(false);
+                isAnimationPlaying = false;
+            }
         }
         else
         {
-            resultText.text = "パスワード不一致";
+            resultText.text = "Incorrect password";
         }
     }
     // Start is called before the first frame update

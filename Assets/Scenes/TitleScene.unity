@@ -1117,7 +1117,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u8131\u51FA\u30B2\u30FC\u30E0\n\u8272\u63A2\u3057"
+  m_Text: 'Escape room
+
+    Key to Color'
 --- !u!222 &129617272
 CanvasRenderer:
   m_ObjectHideFlags: 0
