@@ -2034,7 +2034,7 @@ PrefabInstance:
     - target: {fileID: 23749670609487866, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4e67cd8ae896cb94e8941f89e11986e9, type: 2}
+      objectReference: {fileID: 2100000, guid: 85ffc66e569561a4f819353cc6f22c31, type: 2}
     m_RemovedComponents:
     - {fileID: 114641328670010386, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
     - {fileID: 5966616405675974068, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
@@ -3415,7 +3415,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26b1cc50260800443b692599f1eb4e67, type: 2}
+  - {fileID: 2100000, guid: 2e3977127a3bb9e42a1e0dcf908ccaaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7292,6 +7292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067497043}
     m_Modifications:
+    - target: {fileID: 428016380743017472, guid: fa7f0ade095b7f04ebb831c1777ee7a8, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 434246847994772731, guid: fa7f0ade095b7f04ebb831c1777ee7a8, type: 3}
       propertyPath: m_Name
       value: VaseTall (2)
@@ -10559,7 +10563,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cdff932300a8d5742875fbfba7297727, type: 2}
+  - {fileID: 2100000, guid: 9f57048c152ed8349988223edf874618, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18557,7 +18561,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0

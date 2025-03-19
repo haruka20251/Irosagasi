@@ -20,7 +20,7 @@ public class Cusion : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }

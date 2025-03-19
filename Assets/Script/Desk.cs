@@ -25,7 +25,7 @@ public class Desk : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }

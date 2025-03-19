@@ -1354,7 +1354,7 @@ PrefabInstance:
     - target: {fileID: 23749670609487866, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8b655d8eec38b4b4e8e96757d09f684b, type: 2}
+      objectReference: {fileID: 2100000, guid: 1fc1bc9a72638da40894b362159c7a56, type: 2}
     m_RemovedComponents:
     - {fileID: 114641328670010386, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
     - {fileID: 5966616405675974068, guid: 41ec0e9f2f36a9945a1547074e8c1c52, type: 3}
@@ -6147,6 +6147,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067497043}
     m_Modifications:
+    - target: {fileID: 428016380743017472, guid: fa7f0ade095b7f04ebb831c1777ee7a8, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 434246847994772731, guid: fa7f0ade095b7f04ebb831c1777ee7a8, type: 3}
       propertyPath: m_Name
       value: VaseTall (2)
@@ -18038,6 +18042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067497043}
     m_Modifications:
+    - target: {fileID: 1598202004234748383, guid: 244b8dc28935cd042b8b4dc91f673007, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3298622342973971101, guid: 244b8dc28935cd042b8b4dc91f673007, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

@@ -24,6 +24,8 @@ public class Password1 : MonoBehaviour
     private bool isAnimationPlaying = false;
     public GameObject targetObject;
 
+   
+
     void Start()
     {
         nows = new string[texts.Length];
@@ -57,11 +59,13 @@ public class Password1 : MonoBehaviour
         if (answer == Answer)
         {
             Debug.Log("ê≥â");
+            
             OnCorrect.Invoke();
             audioSource.Play();
 
             if (targetObject != null)
             {
+               
                 targetObject.SetActive(false);
                 isAnimationPlaying = false;
             }
