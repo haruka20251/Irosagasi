@@ -26,15 +26,19 @@ public class Password2 : MonoBehaviour
             OnCorrect.Invoke();
             if (targetObject != null)
             {
-
-                targetObject.SetActive(false);
-                isAnimationPlaying = false;
+                StartCoroutine(HideTargetObjectWithDelay(0.5f));
             }
         }
         else
         {
             resultText.text = "Incorrect password";
         }
+    }
+    private IEnumerator HideTargetObjectWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        targetObject.SetActive(false);
+        isAnimationPlaying = false;
     }
     // Start is called before the first frame update
     void Start()

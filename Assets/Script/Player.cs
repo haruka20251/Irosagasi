@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     private Rigidbody playerRb;
-    private float speed=0.9f;
-    private float speedR=0.2f;
+    private float speed=1.0f;
+    private float speedR=0.4f;
     public Camera subCamera;
     public float minRotation = -45f; // Å¬‰ñ“]Šp“x
     public float maxRotation = 50f; // Å‘å‰ñ“]Šp“x

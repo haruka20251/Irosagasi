@@ -65,10 +65,14 @@ public class Password1 : MonoBehaviour
 
             if (targetObject != null)
             {
-               
-                targetObject.SetActive(false);
-                isAnimationPlaying = false;
+                StartCoroutine(HideTargetObjectWithDelay(0.5f));
             }
         }
+    }
+    private IEnumerator HideTargetObjectWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        targetObject.SetActive(false);
+        isAnimationPlaying = false;
     }
 }
