@@ -19130,7 +19130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uFF23\uFF2C\uFF25\uFF21\uFF32"
+  m_Text: C L E A R
 --- !u!222 &965227080
 CanvasRenderer:
   m_ObjectHideFlags: 0
