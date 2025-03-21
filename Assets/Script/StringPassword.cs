@@ -53,7 +53,7 @@ public class StringPassword : MonoBehaviour
 
             if (targetObject != null)
             {
-                StartCoroutine(HideTargetObjectWithDelay(0.5f));
+                StartCoroutine(HideTargetObjectWithDelay(0.2f));
             }
         }
     }

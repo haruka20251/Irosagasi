@@ -65,7 +65,7 @@ public class Password1 : MonoBehaviour
 
             if (targetObject != null)
             {
-                StartCoroutine(HideTargetObjectWithDelay(0.5f));
+                StartCoroutine(HideTargetObjectWithDelay(0.2f));
             }
         }
     }
